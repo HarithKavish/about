@@ -3,135 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harith Kavish - A Journey Through Innovation</title>
+    <title>Harith Kavish Sekar - Systems Engineer & AI Enthusiast</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-mode">
     <header class="hero-section">
-        <div class="container">
-            <h1>Exploring Harith Kavish's Vision</h1>
-            <p class="subtitle">Innovation, Technology, and the Future</p>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about">About Harith Kavish</a></li>
-                    <li><a href="#projects">Key Projects</a></li>
-                    <li><li><a href="#education">Education & Background</a></li>
-                    <li><a href="#insights">Innovative Insights</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar">
+            <div class="logo-container">
+                <h1 class="logo">Harith Kavish</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h2 class="hero-title">Systems Engineer & AI Enthusiast</h2>
+            <p class="hero-subtitle">Building intelligent systems with Python and AI at TCS</p>
+            <div class="profile-picture">
+                <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Harith Kavish Sekar">
+            </div>
         </div>
     </header>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>Who is Harith Kavish?</h2>
-            <div class="content-grid">
-                <div class="content-card">
-                    <h3>Early Life and Background</h3>
-                    <p>Harith Kavish is a visionary innovator known for his contributions to emerging technologies, particularly in artificial intelligence, machine learning, and sustainable development solutions. Born and raised in a region that fostered a strong interest in science and engineering, Harith developed an early passion for problem-solving and technological advancements.</p>
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <p>Hi, I'm <strong>Harith Kavish Sekar</strong>, a 22-year-old Systems Engineer based in Bangalore, India. Born on a Tuesday in Mangalore, I'm currently working as a Systems Engineer at <strong>Tata Consultancy Services (TCS)</strong>.</p>
+                    <p>I hold a <strong>BTech in Artificial Intelligence and Data Science</strong> from <strong>Sri Krishna College of Engineering and Technology</strong>.</p>
+                    <p>I'm a single child with close family bonds, especially with my parents. My hometown is <strong>Rajapalayam, Tamil Nadu</strong>, but I currently reside in Bangalore.</p>
                 </div>
-                <div class="content-card">
-                    <h3>Professional Journey</h3>
-                    <p>Harith's professional journey began with foundational studies in computer science and engineering. Over the years, he has worked on diverse projects, including developing AI-driven systems for predictive analytics, optimizing energy efficiency in urban environments, and creating tools for accessible technology solutions.</p>
+                <div class="about-details">
+                    <h3>Personal Details</h3>
+                    <ul>
+                        <li><strong>Age:</strong> 22 years</li>
+                        <li><strong>Nationality:</strong> Indian</li>
+                        <li><strong>Language Proficiency:</strong> Tamil, English, and some Hindi</li>
+                        <li><strong>Current Location:</strong> Bangalore, India</li>
+                        <li><strong>Current Accommodation:</strong> PG (Private Guesthouse)</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Key Projects</h2>
-            <div class="project-grid">
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <p>Building predictive models, deep learning architectures, and AI-driven solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Statistics</h3>
+                    <p>Data analysis, hypothesis testing, and statistical modeling for decision-making.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Primary programming language with expertise in libraries like NumPy, Pandas, and TensorFlow.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud & DevOps</h3>
+                    <p>Experience with cloud platforms and DevOps practices for scalable systems.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>System Engineering</h3>
+                    <p>Designing robust, efficient, and maintainable IT infrastructure.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Smart Energy Optimization</h3>
-                    <p>Harith led the development of AI-powered energy management systems that reduce consumption in residential and commercial buildings by up to 20%. These systems adapt to user behavior in real-time, ensuring energy efficiency without sacrificing comfort.</p>
-                    <a href="#" class="project-link">Learn More</a>
+                    <h3>AI Agentic Collaboration Projects</h3>
+                    <p>Exploring agentic AI frameworks to collaborate on personal projects and automate workflows.</p>
+                    <a href="https://github.com/HarithKavish/agentic-ai-projects" target="_blank">View on GitHub</a>
                 </div>
                 <div class="project-card">
-                    <h3>Accessible Technology Platform</h3>
-                    <p>This project focuses on creating inclusive technology tools that enhance accessibility for individuals with disabilities. Harith collaborated with designers and engineers to develop intuitive interfaces and assistive technologies that bridge the digital divide.</p>
-                    <a href="#" class="project-link">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <h3>AI for Predictive Maintenance</h3>
-                    <p>Harith’s work on AI-driven predictive maintenance systems has revolutionized industries by reducing downtime and extending the lifespan of machinery. These systems analyze sensor data to forecast failures before they occur, saving millions in operational costs.</p>
-                    <a href="#" class="project-link">Learn More</a>
+                    <h3>Python Data Science Tools</h3>
+                    <p>Custom tools for data processing and analysis using Python libraries.</p>
+                    <a href="https://github.com/HarithKavish/python-data-tools" target="_blank">View on GitHub</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education" class="education-section">
-        <div class="container">
-            <h2>Education & Background</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p>Harith graduated from [University Name], where he specialized in algorithms, data structures, and software engineering. His thesis focused on optimizing machine learning models for resource-constrained environments.</p>
-                </div>
-                <div class="education-card">
-                    <h3>Master of Science in Artificial Intelligence</h3>
-                    <p>During his master’s program, Harith explored advanced topics in neural networks, deep learning, and ethical considerations in AI. He conducted research on bias mitigation in machine learning models, contributing to fairer and more inclusive AI systems.</p>
-                </div>
-                <div class="education-card">
-                    <h3>Certifications</h3>
-                    <p>Harith holds certifications in cloud computing (AWS Certified Solutions Architect), data science (IBM Data Science Professional Certificate), and sustainable technology (Renewable Energy Systems). These certifications have been instrumental in his work across various industries.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="insights" class="insights-section">
-        <div class="container">
-            <h2>Innovative Insights</h2>
-            <div class="insight-grid">
-                <article class="insight-card">
-                    <h3>The Future of AI in Sustainable Development</h3>
-                    <p>Harith discusses how AI can accelerate sustainable development by optimizing resource usage, predicting environmental changes, and enabling smarter urban planning. He emphasizes the importance of integrating ethical AI practices to ensure equitable benefits.</p>
-                </article>
-                <article class="insight-card">
-                    <h3>Overcoming Challenges in Accessible Technology</h3>
-                    <p>In this insight, Harith shares strategies for designing accessible technology that meets the needs of diverse users. He highlights the role of user-centered design and collaborative efforts between developers, designers, and end-users.</p>
-                </article>
-                <article class="insight-card">
-                    <h3>Energy Efficiency Through Smart Grids</h3>
-                    <p>Harith explains how smart grids, powered by AI, can enhance energy distribution, reduce waste, and integrate renewable energy sources seamlessly. He outlines the potential for smart grids to become a cornerstone of future energy systems.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
+        <section id="contact" class="contact-section">
             <h2>Get In Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:harithkavish40@gmail.com">harithkavish40@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/HarithKavish" target="_blank">@HarithKavish</a></p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="contact-social">
+                    <p>Follow my work on GitHub and explore my projects.</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer-section">
-        <div class="container">
-            <p>&copy; 2024 Harith Kavish. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">Twitter</a>
             </div>
-        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Harith Kavish Sekar. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
