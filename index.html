@@ -10,111 +10,148 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
-    <header class="hero-section">
-        <nav class="navbar">
-            <div class="logo-container">
-                <h1 class="logo">Harith Kavish</h1>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Harith Kavish Sekar</h1>
+                <p class="subtitle">Systems Engineer & AI Enthusiast</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <div class="dark-mode-toggle">
-                <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
-            </div>
-        </nav>
-
-        <div class="hero-content">
-            <h2 class="hero-title">Systems Engineer & AI Enthusiast</h2>
-            <p class="hero-subtitle">Building intelligent systems with Python and AI at TCS</p>
-            <div class="profile-picture">
-                <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Harith Kavish Sekar">
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="sun"></span>
+                </button>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="about" class="about-section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-info">
-                    <p>Hi, I'm <strong>Harith Kavish Sekar</strong>, a 22-year-old Systems Engineer based in Bangalore, India. Born on a Tuesday in Mangalore, I'm currently working as a Systems Engineer at <strong>Tata Consultancy Services (TCS)</strong>.</p>
-                    <p>I hold a <strong>BTech in Artificial Intelligence and Data Science</strong> from <strong>Sri Krishna College of Engineering and Technology</strong>.</p>
-                    <p>I'm a single child with close family bonds, especially with my parents. My hometown is <strong>Rajapalayam, Tamil Nadu</strong>, but I currently reside in Bangalore.</p>
-                </div>
-                <div class="about-details">
-                    <h3>Personal Details</h3>
-                    <ul>
-                        <li><strong>Age:</strong> 22 years</li>
-                        <li><strong>Nationality:</strong> Indian</li>
-                        <li><strong>Language Proficiency:</strong> Tamil, English, and some Hindi</li>
-                        <li><strong>Current Location:</strong> Bangalore, India</li>
-                        <li><strong>Current Accommodation:</strong> PG (Private Guesthouse)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Machine Learning</h3>
-                    <p>Building predictive models, deep learning architectures, and AI-driven solutions.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Statistics</h3>
-                    <p>Data analysis, hypothesis testing, and statistical modeling for decision-making.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>Primary programming language with expertise in libraries like NumPy, Pandas, and TensorFlow.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Cloud & DevOps</h3>
-                    <p>Experience with cloud platforms and DevOps practices for scalable systems.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>System Engineering</h3>
-                    <p>Designing robust, efficient, and maintainable IT infrastructure.</p>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-photo">
+                        <div class="photo-placeholder">HK</div>
+                    </div>
+                    <div class="hero-text">
+                        <h2>Hi, I'm Harith Kavish Sekar</h2>
+                        <p class="age">22 years old</p>
+                        <p class="location">Currently based in Bangalore, India</p>
+                        <p class="role">Systems Engineer at <strong>Tata Consultancy Services (TCS)</strong></p>
+                        <div class="skills-tagline">
+                            <span>Machine Learning & Statistics</span>
+                            <span>Python, AI Experiments, Systems Engineering</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>AI Agentic Collaboration Projects</h3>
-                    <p>Exploring agentic AI frameworks to collaborate on personal projects and automate workflows.</p>
-                    <a href="https://github.com/HarithKavish/agentic-ai-projects" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h3>Python Data Science Tools</h3>
-                    <p>Custom tools for data processing and analysis using Python libraries.</p>
-                    <a href="https://github.com/HarithKavish/python-data-tools" target="_blank">View on GitHub</a>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="personal-details">
+                        <div class="detail">
+                            <h3>Personal Info</h3>
+                            <p><strong>Name:</strong> Harith Kavish Sekar</p>
+                            <p><strong>Age:</strong> 22 (June 3, 2003)</p>
+                            <p><strong>Born:</strong> Mangalore, India (Tuesday)</p>
+                            <p><strong>Current Location:</strong> Bangalore, India</p>
+                            <p><strong>Hometown:</strong> Rajapalayam, Tamil Nadu</p>
+                            <p><strong>Nationality:</strong> Indian</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Education</h3>
+                            <p><strong>Degree:</strong> BTech in Artificial Intelligence and Data Science</p>
+                            <p><strong>Institution:</strong> Sri Krishna College of Engineering and Technology</p>
+                        </div>
+                        <div class="detail">
+                            <h3>Work</h3>
+                            <p><strong>Current Role:</strong> Systems Engineer at Tata Consultancy Services (TCS)</p>
+                        </div>
+                    </div>
+                    <div class="language-preference">
+                        <h3>Language Proficiency</h3>
+                        <p>Speaks Tamil, English, and some Hindi</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <div class="contact-details">
-                    <p><strong>Email:</strong> <a href="mailto:harithkavish40@gmail.com">harithkavish40@gmail.com</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/HarithKavish" target="_blank">@HarithKavish</a></p>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <p>Python, Java, C++, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Technologies</h3>
+                        <p>Docker, Kubernetes, AWS, Azure</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>AI/ML</h3>
+                        <p>Machine Learning, Statistics, Agentic AI</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <p>VSCode, Git, Jira, Confluence</p>
+                    </div>
                 </div>
-                <div class="contact-social">
-                    <p>Follow my work on GitHub and explore my projects.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>GitHub Portfolio</h3>
+                        <p>Explore my <a href="https://github.com/HarithKavish" target="_blank" rel="noopener noreferrer">GitHub</a> for personal projects and AI experiments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> <a href="mailto:harithkavish40@gmail.com">harithkavish40@gmail.com</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/HarithKavish" target="_blank" rel="noopener noreferrer">HarithKavish</a></p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Harith Kavish Sekar. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 Harith Kavish Sekar. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

@@ -5,18 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     themeToggle.addEventListener('click', function() {
         body.classList.toggle('dark-mode');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-        if (body.classList.contains('dark-mode')) {
-            prefersDark.prevent();
-        } else {
-            prefersDark.matchMedia('(prefers-color-scheme: dark)').matches && body.classList.remove('dark-mode');
-        }
+        const isDark = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark);
     });
+
+    // Load saved theme preference
+    const savedTheme = localStorage.getItem('darkMode');
+    if (savedTheme === 'true') {
+        body.classList.add('dark-mode');
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
+
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
 
@@ -26,28 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+
+                // Update active nav link
+                document.querySelectorAll('nav ul li a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
             }
         });
     });
 
-    // Add fade-in animations on scroll
-    const elements = document.querySelectorAll('.element-enter');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('element-enter');
-                observer.unobserve(entry.target);
-            }
+    // Form submission handler
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
         });
-    }, { threshold: 0.1 });
+    }
 
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-
-    // Initialize with dark mode preference
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    if (prefersDark.matches && !body.classList.contains('dark-mode')) {
+    // Initialize with dark mode if preferred
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         body.classList.add('dark-mode');
     }
 });
