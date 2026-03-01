@@ -1,18 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Theme toggle functionality
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
+    // Dark Mode Toggle
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.id = 'darkModeToggle';
+    darkModeToggle.innerHTML = '🌙';
+    darkModeToggle.className = 'dark-mode-toggle';
+    darkModeToggle.addEventListener('click', toggleDarkMode);
 
-    themeToggle.addEventListener('click', function() {
+    // Insert toggle button in the header
+    const header = document.querySelector('.header');
+    header.insertBefore(darkModeToggle, header.firstChild);
+
+    // Toggle dark mode
+    function toggleDarkMode() {
+        const body = document.body;
         body.classList.toggle('dark-mode');
-        const isDark = body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDark);
-    });
 
-    // Load saved theme preference
-    const savedTheme = localStorage.getItem('darkMode');
-    if (savedTheme === 'true') {
-        body.classList.add('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            darkModeToggle.innerHTML = '☀️';
+        } else {
+            darkModeToggle.innerHTML = '🌙';
+        }
+    }
+
+    // Form submission handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
     }
 
     // Smooth scrolling for navigation links
@@ -29,28 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
-
-                // Update active nav link
-                document.querySelectorAll('nav ul li a').forEach(link => {
-                    link.classList.remove('active');
-                });
-                this.classList.add('active');
             }
         });
     });
 
-    // Form submission handler
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
+    // Add hover effects for skill cards
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-5px)';
+            card.style.transition = 'transform 0.3s ease';
         });
-    }
 
-    // Initialize with dark mode if preferred
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        body.classList.add('dark-mode');
-    }
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
 });
