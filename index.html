@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harith Kavish Sekar - Systems Engineer & AI Enthusiast</title>
+    <!-- The shared design system, then only what this page adds on top. -->
+    <link rel="stylesheet" href="https://harithkavish.com/design-system/v1.0.0/tokens.css?v=20260829.2">
+    <link rel="stylesheet" href="https://harithkavish.com/design-system/v1.0.0/base.css?v=20260829.2">
+    <link rel="stylesheet" href="https://harithkavish.com/design-system/v1.0.0/components.css?v=20260829.2">
+    <link rel="stylesheet" href="https://harithkavish.com/design-system/v1.0.0/utils.css?v=20260829.2">
+    <script src="https://harithkavish.com/design-system/v1.0.0/theme-toggle.js?v=20260829.2"></script>
+    <script src="https://harithkavish.com/design-system/v1.0.0/harith-shell.js?v=20260829.2"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-mode">
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <div class="profile-photo-placeholder" aria-label="Profile photo not provided">Profile photo not provided</div>
-                <h1>Harith Kavish Sekar</h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body>
+    <harith-header
+        site-title="Harith Kavish"
+        site-tagline="About"
+        brand-href="https://harithkavish.com/"
+        brand-mark="https://harithkavish.com/logo.png"
+        nav-links='[{"label":"About","href":"#about"},{"label":"Skills","href":"#skills"},{"label":"Projects","href":"#projects"},{"label":"Contact","href":"#contact"}]'></harith-header>
 
     <main>
         <section id="about" class="about-section">
@@ -121,11 +118,9 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Harith Kavish Sekar. All rights reserved.</p>
-        </div>
-    </footer>
+    <harith-footer
+        copyright-text="Harith Kavish Sekar"
+        links='[{"label":"Home","href":"https://harithkavish.com/"},{"label":"Legal","href":"https://harithkavish.com/legal.html"}]'></harith-footer>
 
     <script src="script.js"></script>
 </body>

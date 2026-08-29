@@ -1,12 +1,15 @@
+/* This page's names, resolved to the shared design system. Keeping the names
+   means the rules below are unchanged; taking the values from the system means
+   the page follows the ecosystem in both themes instead of its own palette. */
 :root {
-    --primary-color: #1e3a8a;
-    --secondary-color: #3730a3;
-    --accent-color: #10b981;
-    --text-color: #ffffff;
-    --text-secondary: #cbd5e1;
-    --bg-color: #111827;
-    --card-bg: #1f2937;
-    --border-color: #374151;
+    --primary-color: var(--accent);
+    --secondary-color: var(--accent-strong);
+    --accent-color: var(--accent);
+    --text-color: var(--text);
+    --text-secondary: var(--muted);
+    --bg-color: var(--bg);
+    --card-bg: var(--surface);
+    --border-color: var(--border);
 }
 
 * {
@@ -16,17 +19,11 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-sans);
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dark-mode {
-    --bg-color: #111827;
-    --text-color: #ffffff;
-    --text-secondary: #cbd5e1;
 }
 
 .container {
@@ -252,7 +249,7 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    box-shadow: 0 0 0 3px var(--pill-bg);
 }
 
 button {
@@ -268,7 +265,7 @@ button {
 }
 
 button:hover {
-    background-color: #0d946e;
+    background-color: var(--accent-strong);
 }
 
 .footer {
