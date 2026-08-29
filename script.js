@@ -1,27 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Dark Mode Toggle
-    const darkModeToggle = document.createElement('button');
-    darkModeToggle.id = 'darkModeToggle';
-    darkModeToggle.innerHTML = '🌙';
-    darkModeToggle.className = 'dark-mode-toggle';
-    darkModeToggle.addEventListener('click', toggleDarkMode);
-
-    // Insert toggle button in the header
-    const header = document.querySelector('.header');
-    header.insertBefore(darkModeToggle, header.firstChild);
-
-    // Toggle dark mode
-    function toggleDarkMode() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-
-        if (body.classList.contains('dark-mode')) {
-            darkModeToggle.innerHTML = '☀️';
-        } else {
-            darkModeToggle.innerHTML = '🌙';
-        }
-    }
-
     // Form submission handler
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
