@@ -220,6 +220,32 @@ body {
     flex: 1;
 }
 
+/* The contact form was replaced by a direct email link; these take its place. */
+.contact-note {
+    margin: 0 0 20px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.contact-note a {
+    color: var(--accent-color);
+}
+
+.contact-cta {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-cta:hover {
+    background-color: var(--accent-strong);
+}
+
 .form-group {
     margin-bottom: 20px;
 }
