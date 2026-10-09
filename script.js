@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Form submission handler
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
-        });
-    }
+    // The contact form was removed: it showed a thank-you alert but never sent
+    // anything, which told visitors they had reached him when they had not.
+    // The contact section now links straight to email instead.
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
